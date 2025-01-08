@@ -1,0 +1,14 @@
+To address the issue, we need to provide fallback styles that work consistently across browsers. One approach is to use a more broadly supported pseudo-class like `:focus` in conjunction with `:focus-visible`.  This would ensure proper styling for all users:
+
+```css
+.button:focus {
+  outline: 2px dashed #3498db;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #3498db;
+}
+```
+
+Here, the `:focus` style provides a basic outline for all browsers, while `:focus-visible` offers a more enhanced visual cue for browsers that support it.  Consider further enhancement with more accessible focus indicators, or check for browser support to selectively apply styles.
