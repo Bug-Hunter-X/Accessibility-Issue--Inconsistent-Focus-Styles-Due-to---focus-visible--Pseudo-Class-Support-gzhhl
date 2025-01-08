@@ -1,0 +1,10 @@
+The CSS rule `:focus-visible` is not supported in older browsers.  This can cause accessibility issues for users who rely on keyboard navigation, as focused elements may not have visual indicators of their active state.  Additionally, incorrect or missing focus styles can make it difficult for users with visual impairments to interact with the application effectively.  Here's an example: 
+
+```css
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px #3498db;
+}
+```
+
+This example attempts to style the focus state, but the `:focus-visible` pseudo-class might not be recognized by older or less common browsers. 
